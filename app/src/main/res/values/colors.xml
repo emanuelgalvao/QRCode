@@ -8,9 +8,16 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <color name="primaryColor">#0E5B47</color>
+    <color name="secondaryColor">#29BF99</color>
+
     <color name="text_dark">#303030</color>
     <color name="text_grey">#BABABA</color>
+    <color name="text_white">#FFFFFF</color>
 
-    <color name="developer">#0E5B47</color>
+    <color name="button_dark">#303030</color>
+
+    <color name="developer">#064232</color>
+
 
 </resources>

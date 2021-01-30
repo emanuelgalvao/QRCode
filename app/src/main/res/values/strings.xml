@@ -1,3 +1,18 @@
 <resources>
+
+    <!-- Splash Activity -->
     <string name="app_name">QRCodeApp</string>
+    <string name="logo_accessibility">Logo written QR Code reader and generator</string>
+    <string name="developed_by">Developed by Emanuel Galvão</string>
+    <string name="read">READ</string>
+    <string name="generate">GENERATE</string>
+
+    <!-- Main Activity -->
+
+    <!-- Read Activity -->
+
+    <!-- Generate Activity -->
+
+    <!-- Read and Generated Activity -->
+
 </resources>
