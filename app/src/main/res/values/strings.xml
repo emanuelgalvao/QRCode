@@ -6,8 +6,13 @@
     <string name="developed_by">Developed by Emanuel Galvão</string>
     <string name="read">READ</string>
     <string name="generate">GENERATE</string>
+    <string name="nav_read">QR Codes Read</string>
+    <string name="nav_generate">QR Codes Generated</string>
+    <string name="nav_configuration">Configuration</string>
 
     <!-- Main Activity -->
+    <string name="open">open</string>
+    <string name="close">close</string>
 
     <!-- Read Activity -->
 
