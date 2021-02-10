@@ -25,6 +25,7 @@
     <string name="click_to_read">Click on the button to read!</string>
     <string name="generate_qr_code">GENERATE QR CODE</string>
     <string name="save">Save</string>
+    <string name="configuration">Configuration</string>
 
     <!-- Generate Activity -->
 

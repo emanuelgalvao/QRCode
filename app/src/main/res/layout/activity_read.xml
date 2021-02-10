@@ -8,11 +8,11 @@
     android:background="@drawable/gradient_background">
 
     <ImageView
-        android:id="@+id/ivMenu"
+        android:id="@+id/ivBack"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="10dp"
-        android:src="@drawable/ic_back" />
+        android:src="@drawable/ic_return" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -76,9 +76,10 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/tvQRCodeContent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:maxHeight="300dp"
+                android:maxHeight="200dp"
                 android:layout_marginTop="15dp"
                 android:text="@string/example"
                 android:textColor="@color/text_grey" />
