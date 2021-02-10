@@ -4,17 +4,27 @@
     <string name="app_name">QRCodeApp</string>
     <string name="logo_accessibility">Logo written QR Code reader and generator</string>
     <string name="developed_by">Developed by Emanuel Galvão</string>
+
+    <!-- Main Activity -->
+    <string name="open">open</string>
+    <string name="close">close</string>
     <string name="read">READ</string>
     <string name="generate">GENERATE</string>
     <string name="nav_read">QR Codes Read</string>
     <string name="nav_generate">QR Codes Generated</string>
     <string name="nav_configuration">Configuration</string>
 
-    <!-- Main Activity -->
-    <string name="open">open</string>
-    <string name="close">close</string>
-
     <!-- Read Activity -->
+    <string name="read_qr_code">READ QR CODE</string>
+    <string name="example">Example</string>
+    <string name="qr_code_content">QR Code Content:</string>
+    <string name="share">Share</string>
+    <string name="browse">Browse</string>
+    <string name="search">Search</string>
+    <string name="copy">Copy</string>
+    <string name="click_to_read">Click on the button to read!</string>
+    <string name="generate_qr_code">GENERATE QR CODE</string>
+    <string name="save">Save</string>
 
     <!-- Generate Activity -->
 
