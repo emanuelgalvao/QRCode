@@ -11,6 +11,11 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.emanuelgalvao.qrcodeapp.entity.QRCodeGenerated;
+import com.emanuelgalvao.qrcodeapp.entity.QRCodeGeneratedDao;
+import com.emanuelgalvao.qrcodeapp.entity.QRCodeRead;
+import com.emanuelgalvao.qrcodeapp.entity.QRCodeReadDao;
+import com.emanuelgalvao.qrcodeapp.utils.DBUtils;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.MultiFormatWriter;
 import com.google.zxing.WriterException;
@@ -72,6 +77,8 @@ public class GenerateActivity extends AppCompatActivity {
                                 InputMethodManager imm = (InputMethodManager) getApplicationContext().getSystemService(Context.INPUT_METHOD_SERVICE);
                                 imm.hideSoftInputFromWindow(etQRCodeContent.getWindowToken(), 0);
 
+                                saveQRCodeGemeratedOnDatabase(text);
+
                                 llResult.setVisibility(View.VISIBLE);
                                 ivQRCodeGenerated.setImageBitmap(bitmap);
                             } catch (WriterException e) {
@@ -86,5 +93,11 @@ public class GenerateActivity extends AppCompatActivity {
                 }
             }
         };
+    }
+
+    private void saveQRCodeGemeratedOnDatabase(String QRCodeContent) {
+        QRCodeGeneratedDao qrCodeGeneratedDao = DBUtils.getDaoSession().getQRCodeGeneratedDao();
+        QRCodeGenerated qrCodeGenerated = new QRCodeGenerated(QRCodeContent);
+        qrCodeGeneratedDao.insert(qrCodeGenerated);
     }
 }

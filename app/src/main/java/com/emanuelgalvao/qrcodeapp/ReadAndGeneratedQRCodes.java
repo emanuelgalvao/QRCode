@@ -14,5 +14,6 @@ public class ReadAndGeneratedQRCodes extends AppCompatActivity {
         setContentView(R.layout.activity_read_and_generated_qr_codes);
 
         Objects.requireNonNull(getSupportActionBar()).hide();
+
     }
 }
