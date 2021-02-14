@@ -5,25 +5,27 @@ import org.greenrobot.greendao.annotation.Id;
 import org.greenrobot.greendao.annotation.Generated;
 
 @Entity
-public class QRCodeRead {
+public class QRCode {
 
     @Id(autoincrement = true)
     private Long id;
-
     private String qrCodeContent;
+    private String type;
 
-    @Generated(hash = 1766411820)
-    public QRCodeRead(Long id, String qrCodeContent) {
+    public QRCode(String qrCodeContent, String type) {
+        this.qrCodeContent = qrCodeContent;
+        this.type = type;
+    }
+
+    @Generated(hash = 102740268)
+    public QRCode(Long id, String qrCodeContent, String type) {
         this.id = id;
         this.qrCodeContent = qrCodeContent;
+        this.type = type;
     }
 
-    public QRCodeRead(String qrCodeContent) {
-        this.qrCodeContent = qrCodeContent;
-    }
-
-    @Generated(hash = 1694222151)
-    public QRCodeRead() {
+    @Generated(hash = 670865276)
+    public QRCode() {
     }
 
     public Long getId() {
@@ -40,5 +42,13 @@ public class QRCodeRead {
 
     public void setQrCodeContent(String qrCodeContent) {
         this.qrCodeContent = qrCodeContent;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 }

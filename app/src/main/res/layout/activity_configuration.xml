@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ConfigurationActivity"
+    tools:context=".activity.ConfigurationActivity"
     android:orientation="vertical"
     android:background="@drawable/gradient_background">
 
@@ -46,18 +44,19 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Play beap when reading QR Code" />
+                android:text="@string/play_beap" />
 
             <Switch
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:checked="true" />
+                android:checked="true"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="2dp"
+            android:layout_height="1dp"
             android:background="@color/background_grey" />
 
         <LinearLayout
@@ -70,29 +69,29 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:text="Language"
+                android:text="@string/language"
                 android:textStyle="bold"/>
 
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="20dp" >
+                android:layout_marginStart="20dp" >
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:checked="true"
-                    android:text="English" />
+                    android:text="@string/english" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Portuguese" />
+                    android:text="@string/portuguese" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Spanish" />
+                    android:text="@string/spanish" />
 
             </RadioGroup>
 

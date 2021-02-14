@@ -1,8 +1,10 @@
-package com.emanuelgalvao.qrcodeapp;
+package com.emanuelgalvao.qrcodeapp.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.emanuelgalvao.qrcodeapp.R;
 
 import java.util.Objects;
 

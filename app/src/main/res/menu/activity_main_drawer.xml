@@ -19,7 +19,8 @@
 
     <group
         android:id="@+id/group_configuration"
-        android:checkableBehavior="single">
+        android:checkableBehavior="single"
+        android:visible="false" >
         <item
             android:id="@+id/nav_configuration"
             android:icon="@drawable/ic_configuration"

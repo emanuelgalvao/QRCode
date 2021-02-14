@@ -10,6 +10,7 @@
 
     <color name="primaryColor">#0E5B47</color>
     <color name="secondaryColor">#29BF99</color>
+    <color name="color_dark">#303030</color>
 
     <color name="text_dark">#303030</color>
     <color name="text_grey">#BABABA</color>

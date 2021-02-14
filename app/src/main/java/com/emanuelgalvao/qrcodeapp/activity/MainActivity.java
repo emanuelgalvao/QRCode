@@ -1,4 +1,4 @@
-package com.emanuelgalvao.qrcodeapp;
+package com.emanuelgalvao.qrcodeapp.activity;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,8 +10,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
+import com.emanuelgalvao.qrcodeapp.R;
 import com.google.android.material.navigation.NavigationView;
 
 import java.util.Objects;
@@ -71,12 +71,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void openActivity(Class<?> activityClass) {
+        drawerLayout.closeDrawer(navigationView);
         Intent intent = new Intent(MainActivity.this, activityClass);
         startActivity(intent);
     }
 
-    private void openActivityPassingType(Class<?> activityClass, String typeActivity) {
-        Intent intent = new Intent(MainActivity.this, activityClass);
+    private void openActivityPassingType(String typeActivity) {
+        drawerLayout.closeDrawer(navigationView);
+        Intent intent = new Intent(MainActivity.this, ReadAndGeneratedQRCodesActivity.class);
         Bundle bundle = new Bundle();
         bundle.putString("typeActivity", typeActivity);
         intent.putExtras(bundle);
@@ -88,10 +90,10 @@ public class MainActivity extends AppCompatActivity {
         return item -> {
             switch (item.getItemId()) {
                 case R.id.nav_read:
-                    openActivityPassingType(ReadAndGeneratedQRCodes.class, "read");
+                    openActivityPassingType("read");
                     break;
                 case R.id.nav_generate:
-                    openActivityPassingType(ReadAndGeneratedQRCodes.class, "generated");
+                    openActivityPassingType("generated");
                     break;
                 case R.id.nav_configuration:
                     openActivity(ConfigurationActivity.class);

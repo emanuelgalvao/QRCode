@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Splash Activity -->
-    <string name="app_name">QRCodeApp</string>
+    <string name="app_name">QR Code - Reader and Generator</string>
     <string name="logo_accessibility">Logo written QR Code reader and generator</string>
     <string name="developed_by">Developed by Emanuel Galvão</string>
 
@@ -23,12 +23,28 @@
     <string name="search">Search</string>
     <string name="copy">Copy</string>
     <string name="click_to_read">Click on the button to read!</string>
-    <string name="generate_qr_code">GENERATE QR CODE</string>
-    <string name="save">Save</string>
     <string name="configuration">Configuration</string>
 
     <!-- Generate Activity -->
+    <string name="generate_qr_code">GENERATE QR CODE</string>
+    <string name="type_the_content">Type the content that you want to appear without QR Code…</string>
 
     <!-- Read and Generated Activity -->
+    <string name="qr_codes_read">QR Codes Read</string>
+    <string name="qr_codes_generated">QR Codes Generated</string>
+
+    <!-- Dialog Details -->
+    <string name="qr_code_details">QR Code Details</string>
+    <string name="share_text">Share Text</string>
+    <string name="share_image">Share Image</string>
+    <string name="delete">Delete</string>
+
+    <!-- Configuration Activity -->
+    <string name="play_beap">Play beap when reading QR Code</string>
+    <string name="language">Language</string>
+    <string name="english">English</string>
+    <string name="portuguese">Portuguese</string>
+    <string name="spanish">Spanish</string>
+    <string name="scan_qr_code">Scan the QR Code!</string>
 
 </resources>
