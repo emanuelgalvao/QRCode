@@ -12,19 +12,20 @@ import android.widget.Toast;
 import androidx.core.content.FileProvider;
 
 import com.emanuelgalvao.qrcodeapp.BuildConfig;
+import com.emanuelgalvao.qrcodeapp.R;
 
 import java.io.File;
 import java.io.FileOutputStream;
 
 public class ShareUtils {
 
-    public static Intent shareText(String text) {
+    public static Intent shareText(Context context, String text) {
         Intent sendIntent = new Intent();
         sendIntent.setAction(Intent.ACTION_SEND);
         sendIntent.putExtra(Intent.EXTRA_TEXT, text);
         sendIntent.setType("text/plain");
 
-        return Intent.createChooser(sendIntent, "Share QR Code content");
+        return Intent.createChooser(sendIntent, context.getString(R.string.share_qr_code_content));
     }
 
     @SuppressLint("SetWorldReadable")
@@ -47,7 +48,7 @@ public class ShareUtils {
             e.printStackTrace();
         }
 
-        return Intent.createChooser(sendIntent, "Share QR Code Image");
+        return Intent.createChooser(sendIntent, context.getString(R.string.share_qr_code_image));
     }
 
     public static Intent openSearchAndBrowse(String url) {
@@ -57,8 +58,8 @@ public class ShareUtils {
 
     public static void copyText(Context context, String text) {
         ClipboardManager clipboard = (ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
-        ClipData clip = ClipData.newPlainText("Copied Text", text);
+        ClipData clip = ClipData.newPlainText(context.getString(R.string.copied_text), text);
         clipboard.setPrimaryClip(clip);
-        Toast.makeText(context, "Copied Text!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, context.getString(R.string.copied_text), Toast.LENGTH_SHORT).show();
     }
 }

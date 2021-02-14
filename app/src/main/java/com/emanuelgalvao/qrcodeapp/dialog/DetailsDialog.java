@@ -106,7 +106,7 @@ public class DetailsDialog extends Dialog {
                     onClickButtonCallback.onClickButton(ShareUtils.openSearchAndBrowse(qrCode.getQrCodeContent()), false);
                     break;
                 case R.id.llShareText:
-                    onClickButtonCallback.onClickButton(ShareUtils.shareText(qrCode.getQrCodeContent()), false);
+                    onClickButtonCallback.onClickButton(ShareUtils.shareText(context, qrCode.getQrCodeContent()), false);
                     break;
                 case R.id.llShareImage:
                     onClickButtonCallback.onClickButton(ShareUtils.shareImage(context, bitmap), false);

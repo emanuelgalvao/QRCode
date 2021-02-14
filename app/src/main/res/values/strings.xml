@@ -24,10 +24,11 @@
     <string name="copy">Copy</string>
     <string name="click_to_read">Click on the button to read!</string>
     <string name="configuration">Configuration</string>
+    <string name="scan_qr_code">Scan the QR Code!</string>
 
     <!-- Generate Activity -->
     <string name="generate_qr_code">GENERATE QR CODE</string>
-    <string name="type_the_content">Type the content that you want to appear without QR Code…</string>
+    <string name="type_the_content">Type the content that you want to appear on QR Code…</string>
 
     <!-- Read and Generated Activity -->
     <string name="qr_codes_read">QR Codes Read</string>
@@ -38,13 +39,11 @@
     <string name="share_text">Share Text</string>
     <string name="share_image">Share Image</string>
     <string name="delete">Delete</string>
+    <string name="share_qr_code_image">Share QR Code Image</string>
+    <string name="copied_text">Copied Text!</string>
+    <string name="share_qr_code_content">Share QR Code content</string>
 
     <!-- Configuration Activity -->
     <string name="play_beap">Play beap when reading QR Code</string>
-    <string name="language">Language</string>
-    <string name="english">English</string>
-    <string name="portuguese">Portuguese</string>
-    <string name="spanish">Spanish</string>
-    <string name="scan_qr_code">Scan the QR Code!</string>
 
 </resources>

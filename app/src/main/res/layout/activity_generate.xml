@@ -39,7 +39,7 @@
             android:imeOptions="actionDone"
             android:hint="@string/type_the_content"
             android:autofillHints=""
-            android:inputType="text" />
+            android:inputType="none" />
 
     </LinearLayout>
 

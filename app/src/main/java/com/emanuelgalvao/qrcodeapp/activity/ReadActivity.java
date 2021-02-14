@@ -13,6 +13,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.emanuelgalvao.qrcodeapp.R;
+import com.emanuelgalvao.qrcodeapp.entity.Configuration;
 import com.emanuelgalvao.qrcodeapp.utils.DatabaseUtils;
 import com.emanuelgalvao.qrcodeapp.utils.ShareUtils;
 import com.google.zxing.integration.android.IntentIntegrator;
@@ -28,12 +29,16 @@ public class ReadActivity extends AppCompatActivity {
     private LinearLayout llResult;
     private LinearLayout llBrowse;
 
+    private Configuration configuration;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_read);
 
         Objects.requireNonNull(getSupportActionBar()).hide();
+
+        configuration = DatabaseUtils.getConfigurationFromDatabase();
 
         ImageView ivBack = findViewById(R.id.ivBack);
         LinearLayout llRead = findViewById(R.id.llRead);
@@ -65,7 +70,7 @@ public class ReadActivity extends AppCompatActivity {
                     llResult.setVisibility(View.GONE);
                     IntentIntegrator scanner = new IntentIntegrator(ReadActivity.this);
                     scanner.setDesiredBarcodeFormats(IntentIntegrator.QR_CODE);
-                    //scanner.setBeepEnabled(false);
+                    scanner.setBeepEnabled(configuration.getPlayBeap());
                     scanner.setPrompt(getString(R.string.scan_qr_code));
                     scanner.setCaptureActivity(CaptureActivityPortrait.class);
                     scanner.initiateScan();
@@ -84,7 +89,7 @@ public class ReadActivity extends AppCompatActivity {
                     startActivity(ShareUtils.openSearchAndBrowse(tvQRCodeContent.getText().toString()));
                     break;
                 case R.id.llShare:
-                    startActivity(ShareUtils.shareText(tvQRCodeContent.getText().toString()));
+                    startActivity(ShareUtils.shareText(this, tvQRCodeContent.getText().toString()));
                     break;
             }
         };

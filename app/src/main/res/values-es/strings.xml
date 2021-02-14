@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Splash Activity -->
+    <string name="app_name">QR Code - Lector y Generador</string>
+    <string name="logo_accessibility">Lector y generador de QR Codes escritos con logotipo</string>
+    <string name="developed_by">Desarrollado por Emanuel Galvão</string>
+
+    <!-- Main Activity -->
+    <string name="open">abierto</string>
+    <string name="close">cerrado</string>
+    <string name="read">LEER</string>
+    <string name="generate">GENERAR</string>
+    <string name="nav_read">QR Codes Leídos</string>
+    <string name="nav_generate">QR Codes Generado</string>
+    <string name="nav_configuration">Configuración</string>
+
+    <!-- Read Activity -->
+    <string name="read_qr_code">LEER QR CODE</string>
+    <string name="example">Ejemplo</string>
+    <string name="qr_code_content">Contenido del QR Code:</string>
+    <string name="share">Compartir</string>
+    <string name="browse">Navegue</string>
+    <string name="search">Buscar</string>
+    <string name="copy">Copia</string>
+    <string name="click_to_read">Haga clic en el botón para leer.</string>
+    <string name="configuration">Configuration</string>
+    <string name="scan_qr_code">Escanee el QR Code!</string>
+
+    <!-- Generate Activity -->
+    <string name="generate_qr_code">GENERAR QR CODE</string>
+    <string name="type_the_content">Escriba el contenido que desea que aparezca sin QR Code...</string>
+
+    <!-- Read and Generated Activity -->
+    <string name="qr_codes_read">QR Codes Leídos</string>
+    <string name="qr_codes_generated">QR Codes Generado</string>
+
+    <!-- Dialog Details -->
+    <string name="qr_code_details">QR Code Detalles</string>
+    <string name="share_text">Compartir texto</string>
+    <string name="share_image">Compartir imagen</string>
+    <string name="delete">Borrar</string>
+    <string name="share_qr_code_image">Compartir la imagen del QR Code</string>
+    <string name="copied_text">Texto copiado!</string>
+    <string name="share_qr_code_content">Compartir el contenido del QR Code</string>
+
+    <!-- Configuration Activity -->
+    <string name="play_beap">Toca beap al leer el código QR</string>
+
+</resources>

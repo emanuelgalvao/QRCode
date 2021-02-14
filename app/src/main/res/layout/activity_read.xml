@@ -114,6 +114,7 @@
                     android:text="@string/copy"
                     android:textColor="@color/text_white"
                     android:textAlignment="center"
+                    android:textSize="13sp"
                     android:textStyle="bold"/>
 
             </LinearLayout>
@@ -140,6 +141,7 @@
                     android:text="@string/search"
                     android:textColor="@color/text_white"
                     android:textAlignment="center"
+                    android:textSize="13sp"
                     android:textStyle="bold"/>
 
             </LinearLayout>
@@ -166,6 +168,7 @@
                     android:text="@string/browse"
                     android:textColor="@color/text_white"
                     android:textAlignment="center"
+                    android:textSize="13sp"
                     android:textStyle="bold"/>
 
             </LinearLayout>
@@ -190,6 +193,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/share"
+                    android:textSize="13sp"
                     android:textColor="@color/text_white"
                     android:textAlignment="center"
                     android:textStyle="bold"/>

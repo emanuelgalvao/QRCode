@@ -25,6 +25,8 @@ public class SplashActivity extends AppCompatActivity {
 
         DatabaseUtils.initializeDatabase(this);
 
+        DatabaseUtils.insertInitialConfiguration();
+
         new Handler().postDelayed(() -> {
             startActivity(new Intent(getBaseContext(), MainActivity.class));
             finish();
